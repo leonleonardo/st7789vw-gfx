@@ -14,7 +14,7 @@ After adding the files library to you project. The function ST7789_DrawText can 
 
 ```
 char *text = "Hello World"
-ST7789_DrawText(FontStyle_Emulogic, (const char *)text, X_MAX/2 , Y_MAX/2, ST7789_WHITE, ST7789_BLACK);
+ST7789_DrawText(&FontStyle_Emulogic, (const char *)text, X_MAX/2 , Y_MAX/2, ST7789_WHITE, ST7789_BLACK);
 ```
 
 ## Custom fonts
