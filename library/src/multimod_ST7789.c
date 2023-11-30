@@ -398,7 +398,7 @@ void ST7789_DrawText(const fontStyle_t *font, const char *text, uint16_t x, uint
             for (uint16_t row = 0; row < font->GlyphHeight; row++) {
                 uint8_t rowData = *glyph;
 
-                for (uint8_t col = 0; col < font->GlyphWidth; col++) {
+                for (uint8_t col = 0; col < font->FixedWidth; col++) {
                     if (rowData & (0x80 >> col)) {
                         ST7789_DrawPixel(x + col, y + row, color);
                     } else {
@@ -407,7 +407,7 @@ void ST7789_DrawText(const fontStyle_t *font, const char *text, uint16_t x, uint
                 }
                 glyph -= font->GlyphBytesWidth;
             }
-            x += font->GlyphWidth; 
+            x += font->FixedWidth; 
         }
         text++; 
     }
