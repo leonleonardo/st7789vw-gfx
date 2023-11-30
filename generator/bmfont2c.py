@@ -273,7 +273,7 @@ def processConfig(cfg):
     # Start up the header and source file
     header = header_start
     source = source_start
-    source += '#include "%s"\n' % output_header    
+    source += '#include "../%s"\n' % output_header    
 
     font_no = 1
     

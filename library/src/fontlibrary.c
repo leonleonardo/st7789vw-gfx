@@ -4,7 +4,7 @@
 // 
 
 #include <stdint.h>
-#include "fontlibrary.h"
+#include "../fontlibrary.h"
 
 static uint8_t const Emulogic_Bitmaps[940] = 
 {
